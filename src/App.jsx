@@ -136,11 +136,11 @@ function App() {
 
             {/* Botão de atualização */}
             <button onClick={() => handleUpdate(livro.id, {...livro,  
-                     isbn: novoLivro.isbn != "" ? : setNovoLivro.isbn ,
-                     titulo: novoLivro.titulo,
-                     editora: novoLivro.editora,
-                     autor: novoLivro.autor,
-                     genero: novoLivro.genero,
+                     isbn: novoLivro.isbn != "" ? novoLivro.isbn : livro.isbn,
+                     titulo: novoLivro.titulo != "" ? novoLivro.titulo : livro.titulo,
+                     editora: novoLivro.editora != "" ? novoLivro.editora : livro.editora,
+                     autor: novoLivro.autor != "" ? novoLivro.autor : livro.autor,
+                     genero: novoLivro.genero != "" ? novoLivro.genero : livro.genero,
 
                 })
               }
