@@ -83,45 +83,45 @@ function App() {
         <input
           type="text"
           name="isbn"
-          placeholder="Isbn"
+          placeholder="                   ISBN"
           value={novoLivro.isbn}
           onChange={handleInputChange}
-        />
+        /><br/><br/>
         {/* Campo para a titulo */}
         <input
           type="text"
           name="titulo"
-          placeholder="titulo"
+          placeholder="                TÍTULO"
           value={novoLivro.titulo}
           onChange={handleInputChange}
-        />
+        />  <br/>   <br/>
         {/* Campo para o editora */}
         <input
           type="text"
           name="editora"
-          placeholder="editora"
+          placeholder="                EDITORA"
           value={novoLivro.editora}
           onChange={handleInputChange}
-        />
+        /><br/><br/>
         {/* Campo para o autor */}
         <input
           type="text"
           name="autor"
-          placeholder="autor"
+          placeholder="                 AUTOR"
           value={novoLivro.autor}
           onChange={handleInputChange}
-        />
+        /><br/><br/>
         {/* Campo para o genero */}
         <input
           type="text"
           name="genero"
-          placeholder="genero"
+          placeholder="                GÊNERO"
           value={novoLivro.genero}
           onChange={handleInputChange}
-        /> &nbsp;
+        /><br/><br/>
         {/* Botão de envio do formulário */}
         <button type="submit">Adicionar Livro</button> 
-      </form>
+      </form><br/>
 
       {/* Lista de Livros */}
       <ul>
@@ -129,13 +129,13 @@ function App() {
         {livros.map((livro) => (
           <li key={livro.id}>
             {/* Exibição dos detalhes do veículo */}
-            {livro.isbn} - {livro.titulo} {livro.editora} {livro.autor} {livro.genero}
+         ISBN - {livro.isbn} <br/>Titulo - {livro.titulo} <br/>Editora - {livro.editora} <br/>Autor - {livro.autor}<br/> Gênero - {livro.genero}<br/>
 
             {/* Botão de exclusão */}
-            <button onClick={() => handleDelete(livro.id)}>Excluir</button>
+            <button id="buttonDifferent" onClick={() => handleDelete(livro.id)}>Excluir</button> &nbsp;
 
             {/* Botão de atualização */}
-            <button onClick={() => handleUpdate(livro.id, {...livro,  
+            <button id="buttonDifferent" onClick={() => handleUpdate(livro.id, {...livro,  
                      isbn: novoLivro.isbn != "" ? novoLivro.isbn : livro.isbn,
                      titulo: novoLivro.titulo != "" ? novoLivro.titulo : livro.titulo,
                      editora: novoLivro.editora != "" ? novoLivro.editora : livro.editora,

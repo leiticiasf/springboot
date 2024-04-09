@@ -5,38 +5,61 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1{
+  color: #f7e9dc;
+  font-size: 50px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input{
+  border: transparent;
+  border-radius: 4px;
+  background-color: #d6b57d;
+  color: #7e4700;
+  height: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+body {
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: url(./assets/fundo.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
-.card {
-  padding: 2em;
+
+button {
+  background-color: #D9C8A9;
+  border-radius: 10px;
+  border: 1px solid ;
+  border-color: #BF9D7E  ;
+  padding: 0.6em 1.9em;
+  font-size: 1em;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 1s;
+  transition: background-color 1s;
+  border-width: 10px;
+  color:#88715b;
+
+}
+button:hover {
+  border-color: #bbac90;
+  background-color: #ad8f72;
 }
 
-.read-the-docs {
-  color: #888;
+li{
+  color:#d6b57d;
+  position:sticky;
+  font-family: inherit;
+  font-size: 19px;
+}
+
+#buttonDifferent{
+  border-width: 10px;
+  padding: 0.3em 1em;
+
 }
